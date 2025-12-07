@@ -20,10 +20,9 @@ This is how the final API/CLI will transform your raw log data:
 2025-12-08 09:01:06 [WARN] High load on Service B.
 2025-12-08 09:01:07 [CRITICAL] Request queue overflow on Load Balancer.
 ... (and 1000s of lines of noise)
-...
-📤 Output (The Structured Summary)
-json
-Copy code
+```
+### **📤 Output (The Structured Summary)**
+
 {
   "root_cause": "Database connection timeout from Service A. Check connection pool configuration.",
   "impacted_services": ["Service A", "Service B", "Load Balancer"],
@@ -33,25 +32,24 @@ Copy code
     "Perform health check on the database instance.",
     "Increase request queue size on Load Balancer (temporarily)."
   ]
-}
-Value Proposition
+} 
+
+# **Value Proposition**
 AI analysis takes less than 5 seconds, saving engineers valuable time and reducing incident downtime costs.
 
-🚀 Join the Beta & Help Us Prioritize!
+# Join the Beta & Help Us Prioritize!
 We are currently building the core logic and integration points for the Incident Summarizer.
 We need the help of DevOps and SRE professionals to prioritize our work.
 
 We need to know:
 
-Which Log Platform (Datadog, Splunk, etc.) should we integrate with first?
-
-How much time are we actually saving you?
-
-What features are worth paying for?
+* Which Log Platform (Datadog, Splunk, etc.) should we integrate with first?
+* How much time are we actually saving you?
+* What features are worth paying for?
 
 📝 60-second survey:
 https://forms.gle/k7Hj6F7bYvgqrqZc6
 
-Next Steps
+# Next Steps
 Once we validate the most requested features, we will release the first Python CLI version.
 Follow this repository for updates!
