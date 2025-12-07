@@ -21,8 +21,9 @@ This is how the final API/CLI will transform your raw log data:
 2025-12-08 09:01:07 [CRITICAL] Request queue overflow on Load Balancer.
 ... (and 1000s of lines of noise)
 ```
-### **📤 Output (The Structured Summary)**
+### 📤 Output (The Structured Summary)
 
+```json
 {
   "root_cause": "Database connection timeout from Service A. Check connection pool configuration.",
   "impacted_services": ["Service A", "Service B", "Load Balancer"],
@@ -32,7 +33,7 @@ This is how the final API/CLI will transform your raw log data:
     "Perform health check on the database instance.",
     "Increase request queue size on Load Balancer (temporarily)."
   ]
-} 
+}
 
 # **Value Proposition**
 AI analysis takes less than 5 seconds, saving engineers valuable time and reducing incident downtime costs.
