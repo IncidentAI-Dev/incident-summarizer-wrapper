@@ -34,7 +34,7 @@ This is how the final API/CLI will transform your raw log data:
     "Increase request queue size on Load Balancer (temporarily)."
   ]
 }
-
+```
 # **Value Proposition**
 AI analysis takes less than 5 seconds, saving engineers valuable time and reducing incident downtime costs.
 
